@@ -1,0 +1,1 @@
+This is a pip install-able N-dimensional gradient descent algorithm.  The name is NdimGradDescentRoyal.

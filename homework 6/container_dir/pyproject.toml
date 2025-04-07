@@ -1,0 +1,11 @@
+[project]
+name = "NdimGradDescentRoyal"
+version = "0.1.0"
+description = "The research notebook"
+dependencies = [
+    "numpy"
+]
+
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"

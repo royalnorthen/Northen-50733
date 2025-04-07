@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<body>
+<div class=well>
+    <div class=row>
+        <div align=center><h1>Current projects</h1></div>
+        {% for p in projects %}
+        <a href="{{ '/projects/%s.html'%p.name }}">{{p.name}} <br></a>
+        {% endfor %}
+    </div>
+</div>
+
+
+<h4>Create new project</h4>
+<form method=post>
+  <input type=text name=project class="input-field">
+  <input type=submit value=Create class="btn">
+</form>
+
+</body>
+</html>

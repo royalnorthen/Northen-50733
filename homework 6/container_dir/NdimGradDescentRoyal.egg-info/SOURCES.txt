@@ -1,0 +1,8 @@
+pyproject.toml
+NdimGradDescentRoyal/N-Dim_Grad_Descent_Royal.py
+NdimGradDescentRoyal/__init__.py
+NdimGradDescentRoyal.egg-info/PKG-INFO
+NdimGradDescentRoyal.egg-info/SOURCES.txt
+NdimGradDescentRoyal.egg-info/dependency_links.txt
+NdimGradDescentRoyal.egg-info/requires.txt
+NdimGradDescentRoyal.egg-info/top_level.txt

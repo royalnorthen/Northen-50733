@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<body>
+<h1>{{project}}</h1>
+
+
+<h1>Notes</h1>
+{% for n in notes %}
+<p>{{n.researcher}}: {{n.content}}</p>
+{% endfor %}
+
+
+<h4>Create new note</h4>
+<form action="/projects/{{project}}.html" method="post">
+  <div>
+    <label>Researcher:</label>
+    <input type="text" name="researcher" placeholder="John Doe">
+  </div>
+  <div>
+    <label>Note:</label>
+    <textarea class="form-control" name="note" rows="2"></textarea>
+  </div>
+  <p><input type="submit" value="Post" class="btn"></p>
+  </form>
+
+</body>
+</html>
