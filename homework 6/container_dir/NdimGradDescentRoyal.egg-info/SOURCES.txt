@@ -1,5 +1,5 @@
 pyproject.toml
-NdimGradDescentRoyal/N-Dim_Grad_Descent_Royal.py
+NdimGradDescentRoyal/N_Dim_Grad_Descent_Royal.py
 NdimGradDescentRoyal/__init__.py
 NdimGradDescentRoyal.egg-info/PKG-INFO
 NdimGradDescentRoyal.egg-info/SOURCES.txt

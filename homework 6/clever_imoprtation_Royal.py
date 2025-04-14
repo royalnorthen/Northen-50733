@@ -4,9 +4,19 @@ from NdimGradDescentRoyal import N_Dim_Grad_Descent_Royal
 def line(x_in, m, b):
     return m*np.sin(x_in) + b
 
+def line_1(x):
+    return line(x, 500, 0.1)
+
 def line_2(x):
-    return line(x, 10, 0.1)
+    return line(x, 10, -4)
 
-minimum, steps, path_taken = N_Dim_Grad_Descent_Royal.Ndim_grad_desc(line_2, np.array([9]), accuracy=0.000001, taken_path=True)
+def line_3(x):
+    return line(x, 3, 5)
 
-print(f"minimum found to be {minimum} in {steps} steps.")
+minimum_1, steps_1, path_taken_1 = N_Dim_Grad_Descent_Royal.Ndim_grad_desc(line_1, np.array([9]), accuracy=0.000001, taken_path=True)
+minimum_2, steps_2, path_taken_2 = N_Dim_Grad_Descent_Royal.Ndim_grad_desc(line_2, np.array([9]), accuracy=0.000001, taken_path=True)
+minimum_3, steps_3, path_taken_3 = N_Dim_Grad_Descent_Royal.Ndim_grad_desc(line_3, np.array([9]), accuracy=0.000001, taken_path=True)
+
+print(f"minimum of line_1 found to be {minimum_1} in {steps_1} steps.")
+print(f"minimum of line_2 found to be {minimum_2} in {steps_2} steps.")
+print(f"minimum of line_3 found to be {minimum_3} in {steps_3} steps.")
